@@ -8,7 +8,7 @@ interface infoI {
 
 const TimelineInfo = ({title, text, date, index, direction}: infoI) => {
   return (
-    <div className={`flex gap-2 md:gap-12 md:min-h-[6rem] ${direction && 'flex-row-reverse'}`}>
+    <div className={`flex gap-2 md:gap-12 md:min-h-[6rem] ${direction && 'md:flex-row-reverse'}`}>
       <div className={`hidden md:flex ${!direction && 'justify-end'} items-end flex-1`}>{date}</div>
       <div className="flex-column items-center gap-2">
         <span className="bg-secondary-100 w-1 h-full rounded-sm"></span>
