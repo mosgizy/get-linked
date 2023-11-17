@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;600;700&family=Unica+One&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    background-color: #150E28;
+    color:white;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+  }
+
+  h2{
+    font-family: 'Clash Display';
+  }
+}
+
+@layer component{
+  .flex-center{
+    @apply flex items-center
+  }
+
+  .flex-column{
+    @apply flex flex-col 
+  }
+
+  .info-wrapper{
+    @apply pb-12 border-b border-white/[.18]
+  }
+
+  .info-container{
+    @apply max-w-[85%] mx-auto flex-column md:flex-row md:items-center [&>div]:flex-[1_0_0%] [&>div]:items-center gap-8 items-center text-center md:text-left
+  }
+
+  .section{
+    @apply max-w-[85%] mx-auto
+  }
+}
+
+.gradient-border{
+   border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+  border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+}
