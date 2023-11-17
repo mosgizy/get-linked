@@ -9,20 +9,20 @@ const Sponsors = () => {
           </p>
         </div>
         <div className="border border-secondary-100 rounded-md px-12 md:px-20 py-10 md:py-16 mt-10">
-          <div className="grid grid-cols-3 grid-rows-2 gap-2 [&>div]:px-8 [&>div]:py-2 [&>div]:flex-center [&>div]:justify-center [&>div:img]:w-[7.5rem] [&>div:img]:h-[7.5rem]">
+          <div className="grid grid-cols-3 grid-rows-2 gap-2 [&>div]:py-2 [&>div]:flex-center [&>div]:justify-center [&>div:img]:w-[7.5rem] [&>div:img]:h-[7.5rem]">
             <div className="border-b-2 border-secondary-100 flex-center justify-center">
-              <img src="/images/liberty.png" alt="" />
+              <img src="/images/liberty.png" alt="" className="md:w-auto w-24" />
             </div>
             <div className="border-b-2 border-secondary-100 !px-0">
               <div className="border-s-2 border-e-2 px-4 border-secondary-100 h-full flex-center justify-center">
-                <img src="/images/liberty-white.png" alt="" />
+                <img src="/images/liberty-white.png" alt="" className="md:w-auto w-8" />
               </div>
             </div>
             <div className="border-b-2 border-secondary-100 flex-center justify-center">
-              <img src="/images/winwise.png" alt="" />
+              <img src="/images/winwise.png" alt="" className="md:w-auto w-8" />
             </div>
             <div className="flex-center justify-center">
-              <img src="/images/wisper.png" alt="" />
+              <img src="/images/wisper.png" alt="" className="md:w-auto w-8" />
             </div>
             <div className="border-s-2 border-e-2 border-secondary-100 flex-center justify-center md:text-5xl">
               Pay<span className="text-secondary-300">box</span>
